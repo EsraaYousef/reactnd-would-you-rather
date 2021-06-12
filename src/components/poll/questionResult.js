@@ -25,21 +25,6 @@ const QuestionResult = (props) => {
 
   const answer = users[authedUser].answers[qid];
 
-  console.log(
-    authedUser,
-    "\n",
-    answer,
-    "\n",
-    "optionOneVotes " + optionOneVotes,
-    "\n",
-    "optionTwoVotes " + optionTwoVotes,
-    "\n",
-    "percentageOptionOne " + percentageOptionOne,
-    "\n",
-    "percentageOptionTwo " + percentageOptionTwo,
-    "\n"
-  );
-
   return (
     <div className="main-wrapper">
       <div className="main-title d-flex justify-content-between">

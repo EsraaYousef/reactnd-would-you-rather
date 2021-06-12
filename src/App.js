@@ -9,15 +9,10 @@ import { connect, useDispatch } from "react-redux";
 import { handleInitialData } from "../src/actions/index";
 import ReactMessageNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
-
-// import LoadingBar from "react-redux-loading-bar";
 import Header from "./components/header";
 import Login from "./components/login/login";
 import DashBoard from "./components/dashboard";
 import AddQuestion from "./components/poll/newQuestion";
-//test question poll
-// import QuestionPoll from "./components/poll/questionPoll";
-// import QuestionResult from "./components/poll/questionResult";
 import QuestionDetails from "./components/poll/questionDetails";
 import LeaderBoard from "./components/leaderboard";
 import Notfound from "./components/error";
@@ -49,16 +44,6 @@ const App = () => {
             />
             <ProtectedRoute path="/add" exact component={AddQuestion} />
             <ProtectedRoute path="/leaderboard" exact component={LeaderBoard} />
-            {/* <ProtectedRoute
-              path="/questionPoll"
-              exact
-              component={QuestionPoll}
-            /> */}
-            {/* <ProtectedRoute
-              path="/questions/:id"
-              exact
-              component={QuestionResult}
-            /> */}
             <ProtectedRoute
               path="/questions/:id"
               exact

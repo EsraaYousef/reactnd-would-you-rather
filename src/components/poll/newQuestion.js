@@ -25,7 +25,7 @@ const NewQuestion = (props) => {
     setRedirectDashboard(true);
   };
   if (redirectDashboard) {
-    return <Redirect to="/" />;
+    return <Redirect to="/dashboard" />;
   }
   return (
     <div className="main-wrapper">

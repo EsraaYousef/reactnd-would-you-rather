@@ -15,7 +15,6 @@ import { ReactMessageNotification } from "../../utils/utilities";
 const AnswerPanel = (props) => {
   const { question_id, author, authedUser, question, dispatch } = props;
   const [optionChanged, setOptionChanged] = useState("");
-  console.log(author, "....");
   const handleSubmitVote = (e) => {
     e.preventDefault();
 

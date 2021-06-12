@@ -15,6 +15,9 @@ class QuestionDetails extends React.Component {
 
   render() {
     const { authedUser, dispatch, users, question, id, author } = this.props;
+    if (!question) {
+      return <Redirect to="/error" />;
+    }
     const answer = this.isAnswered(authedUser, question);
 
     if (question === null) {
